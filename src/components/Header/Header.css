@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 66px 24px 0 86px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__logo {
+  width: 156px;
+  height: 48px;
+}
+
+.header__separator {
+  height: 28px;
+}
+
+.header__date {
+  font-family: 'Kyiv*Type Titling';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: #c8c8c8;
+  margin-left: 26px;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__icon {
+  width: 43px;
+  height: 43px;
+}
+
+.header__profile-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
