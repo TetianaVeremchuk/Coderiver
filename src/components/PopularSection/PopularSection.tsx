@@ -12,22 +12,6 @@ export const PopularSection: React.FC = () => {
     <section className="popular-section">
       <div className="popular-section__header">
         <h2>Popular This Week</h2>
-        <div className="popular-section__age-wrapper">
-          <div className="popular-section__age-badge">
-            <div className="popular-section__age-badge-red"></div>
-            <span>16+</span>
-          </div>
-        </div>
-      </div>
-      <div className="popular-section__content-wrapper">
-        <div className="popular-section__content">
-          <img src={movie6} alt="Movie 6" className="popular-section__movie popular-section__movie--half" />
-          <img src={movie1} alt="Movie 1" className="popular-section__movie" />
-          <img src={movie2} alt="Movie 2" className="popular-section__movie" />
-          <img src={movie3} alt="Movie 3" className="popular-section__movie" />
-          <img src={movie4} alt="Movie 4" className="popular-section__movie" />
-          <img src={movie5} alt="Movie 5" className="popular-section__movie" />
-        </div>
         <div className="popular-section__controls">
           <button className="popular-section__button">
             <svg
@@ -59,6 +43,22 @@ export const PopularSection: React.FC = () => {
               />
             </svg>
           </button>
+        </div>
+        <div className="popular-section__age-wrapper">
+          <div className="popular-section__age-badge">
+            <div className="popular-section__age-badge-red"></div>
+            <span>16+</span>
+          </div>
+        </div>
+      </div>
+      <div className="popular-section__content-wrapper">
+        <div className="popular-section__content">
+          <img src={movie6} alt="Movie 6" className="popular-section__movie popular-section__movie--half" />
+          <img src={movie1} alt="Movie 1" className="popular-section__movie" />
+          <img src={movie2} alt="Movie 2" className="popular-section__movie" />
+          <img src={movie3} alt="Movie 3" className="popular-section__movie" />
+          <img src={movie4} alt="Movie 4" className="popular-section__movie" />
+          <img src={movie5} alt="Movie 5" className="popular-section__movie" />
         </div>
       </div>
     </section>

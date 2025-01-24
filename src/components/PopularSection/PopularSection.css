@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+  max-width: 1001px;
 }
 
 .popular-section__header h2 {
@@ -75,15 +76,13 @@
 .popular-section__controls {
   display: flex;
   gap: 24px;
-  position: absolute;
-  right: 190px;
-  top: 10px;
 }
 
 .popular-section__button {
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .popular-section__button svg {
