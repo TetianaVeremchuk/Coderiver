@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Kyiv*Type Titling';
+  src: url('./assets/fonts/KyivTypeTitling.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background: url('@/assets/bubbles-background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
@@ -9,3 +18,4 @@ body {
   position: relative;
   z-index: 2;
 }
+

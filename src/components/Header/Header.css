@@ -21,10 +21,10 @@
 }
 
 .header__date {
-  font-family: 'Kyiv*Type Titling';
+  font-family: 'Kyiv*Type Titling', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 28.8px;
+  line-height: 28px;
   color: #c8c8c8;
   margin-left: 26px;
 }
