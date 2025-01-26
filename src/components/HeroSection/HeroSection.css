@@ -71,19 +71,23 @@
 }
 
 .hero__button {
+  font-family: 'Inter', Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
+  margin-top: 45px;;
   border: 2px solid #fff;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 272px;
+  height: 64px;
 }
 
 .hero__button--primary {
-  background-color: #e50914;
+  background-color: #D40D1F;
   color: #fff;
   border: none;
 }
@@ -95,6 +99,7 @@
 .hero__button--secondary {
   background-color: transparent;
   color: #fff;
+  margin-left: 50px;
 }
 
 .hero__button--secondary:hover {
