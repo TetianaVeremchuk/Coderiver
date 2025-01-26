@@ -1,50 +1,32 @@
-# Coderiver# React + TypeScript + Vite
+# [DEMO](https://tetianaveremchuk.github.io/Coderiver/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Netflix
 
-Currently, two official plugins are available:
+## Technologies and Libraries
+- **HTML5**: Used for creating the structure of the section.
+- **CSS3**: For styling elements and layouts.
+- **React**: Utilized for building components and managing the UI.
+- **TypeScript**: Provides static typing, improving code reliability and scalability.
+- **Vite**: A fast build tool for application development and bundling.
+- **React-Three-Fiber**: Used to integrate 3D graphics into the project.
+- **Three.js**: A library for creating and rendering the 3D scene.
+- **Prettier**: For automatic code formatting.
+- **ESLint**: For ensuring coding standards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Text Animation
+Smooth text animation has been added to enhance the user experience:
+- Texts (headings, descriptions, and other information) are hidden initially.
+- On page load, they appear gradually with a subtle fade-in and upward motion effect.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 3D Scene Implementation
+An interactive 3D starry background has been integrated into the section:
+- Stars are randomly generated in a 3D space.
+- The scene is created using `React-Three-Fiber` and `Three.js`.
+- Interactive elements: Stars react to mouse movements, adding a dynamic and engaging effect.
+- The scene operates smoothly, enhancing the overall design aesthetics.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+---
