@@ -1,21 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-@font-face {
-  font-family: 'Kyiv*Type Titling';
-  src: url('./assets/fonts/KyivTypeTitling.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
-  background: url('@/assets/bubbles-background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  overflow: hidden;
 }
 
 .app {
   position: relative;
-  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
